@@ -16,7 +16,7 @@ export async function auth(req, res, next) {
   next();
 }
 
-const dataMethods = ['body','query']
+const dataMethods = ['body','query','params']
 
 export function validate(schema){
   return (req,res,next) => {
